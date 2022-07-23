@@ -143,6 +143,16 @@ git add . - add every file at once to the git folder
 git add file - adding a file to the git folder
 git commit - m "add comment " - commiting the file to git
 git remote -v
+
+git rm --cached Bobby_Python_Tutorial_for_Beginners/python-course-for-beginners
+
+git remote add origin https://github.com/superdalton/hibreed_python_lesson.git 
+NB: origin can be anything, it is just an alias
+
+git branch -M main 
+NB: Git has branches, and can be created. Main was previously called Master, but not anymore. 
+your local repository will contain main branch
+
 git push origin main
 '''
 
