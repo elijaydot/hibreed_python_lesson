@@ -154,6 +154,51 @@ NB: Git has branches, and can be created. Main was previously called Master, but
 your local repository will contain main branch
 
 git push origin main
+
+git remote add origin https://github.com/superdalton/hibreed_python_lesson.git
+git branch -M main
+git push -u origin main
+
+
+git
+
+Open terminal to the path of the project
+git init
+git status
+git add .
+git commit -m "My hibreed python lessons"
+git branch -M main
+git push origin main
+
+
+git pull origin main
+
+git clone https://github.com/superdalton/hibreed_python_lesson.git
+
+
+creating branches in git (use the -b flag when creating a new branch)
+git checkout -b chat
+
+NB: say we agreed that only finished work go to main branch, hence, we can create several branches for several aspect of the proced
+git push origin chat
+
+to go back to main branch 
+git checkout main
+
+
+Step 1: Clone the repository or update your local repository with the latest changes.
+
+git pull origin main
+Step 2: Switch to the base branch of the pull request.
+
+git checkout main
+Step 3: Merge the head branch into the base branch.
+
+git merge tests
+Step 4: Push the changes.
+
+git push -u origin main
+
 '''
 
 # draw a rectangle
@@ -171,3 +216,26 @@ y = 1/ (x + 1/(x + 1/((x + 1/x))))
 print("y =", y)
 
 # 23072022
+
+a = 5
+b = 0
+
+'''
+try:
+    print(a/b)
+
+except Exception as e:
+    print("You should not divide by zero", e)
+
+finally:
+    print("Program got to this point")
+'''
+
+try:
+    print(a/b)
+
+except ZeroDivisionError as e:
+    print("Do not deivide by zero")
+
+except TypeError as e:
+    print("Can't divide different types of values")
