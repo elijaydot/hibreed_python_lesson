@@ -40,7 +40,7 @@ def divide():
     except ZeroDivisionError as e:  # when you divide by 0
         print(e, ". Do not divide by zero!")
     
-    except TypeError as e:s
+    except TypeError as e:
         print(e,". Can't divide different types of values")
 
     except ValueError as e:  # when you enter a string or character
